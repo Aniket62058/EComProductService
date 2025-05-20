@@ -1,11 +1,25 @@
 package com.aniket.EcomProductService.dto;
 
-public class ProductRequestDTO {
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
+public class FakeStoreResponseDTO {
+    private int id;
     private String title;
     private double price;
     private String description;
     private String category;
     private String image;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getTitle() {
         return title;
@@ -45,5 +59,20 @@ public class ProductRequestDTO {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    // Getters and setters
+
+
+    @Override
+    public String toString() {
+        return "ProductResponseDTO{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", price=" + price +
+                ", description='" + description + '\'' +
+                ", category='" + category + '\'' +
+                ", image='" + image + '\'' +
+                '}';
     }
 }

@@ -1,6 +1,11 @@
 package com.aniket.EcomProductService.dto;
 
-public class ProductRequestDTO {
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
+public class FakeStoreRequestDTO {
     private String title;
     private double price;
     private String description;
